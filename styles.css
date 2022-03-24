@@ -1,0 +1,267 @@
+:root {
+  --azul_main: rgba(62, 59, 216, 0.877);
+  --gris: rgb(66, 72, 129);
+  --gris_letra: gray;
+  --azul_claro: rgba(72, 113, 226, 0.144);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  padding: 0 5rem;
+}
+
+.main {
+  padding-bottom: 30rem;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--gris);
+  font-size: 5rem;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--gris);
+  font-size: 3rem;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--gris);
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--gris_letra);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.sombra-boton,
+.boton2:hover {
+  -webkit-box-shadow: -1px 16px 35px -11px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 16px 35px -11px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 16px 35px -11px rgba(0, 0, 0, 0.75);
+}
+
+.sombra-articulo {
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 2px solid #f3f0f5;
+}
+
+.navegador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor-nav {
+  display: flex;
+  justify-content: space-between;
+  min-width: 50%;
+  align-items: center;
+}
+
+.navegador img {
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .navegador {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.navegador a {
+  color: darkgrey;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navegador a:hover {
+  color: var(--azul_main);
+}
+
+.boton,
+.boton2:hover {
+  background-color: var(--azul_main);
+  padding: 1rem 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+}
+
+.boton2:hover {
+}
+
+.contenedor-padre {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.izquierda {
+  width: auto;
+  padding-right: 5rem;
+}
+
+.derecha {
+}
+
+.foto-seccion {
+  background-image: url(img/nurse.jpg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.texto {
+  text-align: justify;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons-padre {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.contenedor-imagenes {
+}
+
+.imagenes {
+  display: flex;
+  flex-direction: row;
+  border-image-width: auto;
+  justify-content: space-around;
+}
+
+.imagenes img {
+  height: 50%;
+  padding: 0.5%;
+  max-width: 10rem;
+}
+
+.contenedor-articulos {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.articulo {
+  padding: 5rem;
+  width: 13%;
+  height: 20rem;
+}
+
+.articulo:hover,
+.articulo2:hover {
+  -webkit-box-shadow: 6px 10px 44px -7px rgba(149, 155, 184, 1);
+  -moz-box-shadow: 6px 10px 44px -7px rgba(149, 155, 184, 1);
+  box-shadow: 6px 10px 44px -7px rgba(149, 155, 184, 1);
+}
+
+.articulo svg,
+.articulos3 svg {
+  background-color: var(--azul_claro);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.articulo p {
+  font-size: 1.2rem;
+}
+
+.foto-seccion2 {
+  background-image: url(img/nuerse2.jpg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.articulos2 {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.articulo2 {
+  margin: 1rem;
+}
+
+.foto-seccion3 {
+  background-image: url(img/nuerse3.jpg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.articulos3 {
+  display: grid;
+}
+
+.articulo3 {
+  width: 20rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boton2 {
+  background-color: var(--azul_claro);
+  color: var(--azul_main);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  border: none;
+}
+
+.pie {
+  background-color: var(--azul_claro);
+  margin-top: 7rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+}
+
+.modulos-pie {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pie p {
+  font-size: 1.2rem;
+}
+
+.art1,
+.art2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+}
